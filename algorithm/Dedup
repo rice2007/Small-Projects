@@ -1,0 +1,16 @@
+public class Dedup 
+{  
+    public static void main(String[] args) 
+    {
+        SET<String> input = new SET<String>();
+        while (!StdIn.isEmpty()) 
+        {
+            String s = StdIn.readString();
+            if (!input.contains(s)) 
+            {
+                input.add(s);
+                StdOut.println(s);
+            }
+        }
+    }
+}
